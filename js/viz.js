@@ -261,7 +261,7 @@
   var rotation;
   window.addEventListener('mousemove', function(e) { 
     var x = (window.innerWidth-e.x)/window.innerWidth/10;
-    var y = (window.innerHeight-e.y)/window.innerHeight/10;
+    var y = -((window.innerHeight-e.y)/window.innerHeight-2)/10;
     camera.position.x = Math.sin(x) * 5000;
     camera.position.y = Math.sin(y) * 5000;
     camera.lookAt( scene.position ); 
