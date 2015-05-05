@@ -36,6 +36,35 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+$(function() {
+    $(".lsxh-btn").click(function(e) {
+        $(".current-page").each(function(i, obj) {
+            $(this).removeClass("current-page");
+        });
+        $("#lsxh-page").addClass("current-page");
+
+        e.preventDefault();
+    });
+
+    $(".nysxh-btn").click(function(e) {
+        $(".current-page").each(function(i, obj) {
+            $(this).removeClass("current-page");
+        });
+        $("#nysxh-page").addClass("current-page");
+
+        e.preventDefault();
+    });
+
+    $(".sxh-btn").click(function(e) {
+        $(".current-page").each(function(i, obj) {
+            $(this).removeClass("current-page");
+        });
+        $("#sxh-page").addClass("current-page");
+
+        e.preventDefault();
+    });
+});
+
 /* form validation plugin */
 $.fn.goValidate = function() {
     var $form = this,

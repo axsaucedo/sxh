@@ -229,7 +229,7 @@
        .start();
   }
 
-  var curr = 0;
+  var curr = 2;
   var layouts = ['sphere', 'helix', 'grid'];
   function transform_it() {
     console.log(layouts[curr]);
@@ -260,7 +260,7 @@
   
   var rotation;
   window.addEventListener('mousemove', function(e) { 
-    var x = (window.innerWidth-e.x)/window.innerWidth/10;
+    var x = ((window.innerWidth-e.x)/window.innerWidth-.5)/10;
     var y = -((window.innerHeight-e.y)/window.innerHeight-2)/10;
     camera.position.x = Math.sin(x) * 5000;
     camera.position.y = Math.sin(y) * 5000;

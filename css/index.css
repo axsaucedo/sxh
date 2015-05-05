@@ -5,6 +5,14 @@ body {
   width: 99%;
 }
 
+page {
+  display: none;
+}
+
+.current-page {
+  display: block;
+}
+
 #about {
     padding-top: 100px;
 }
